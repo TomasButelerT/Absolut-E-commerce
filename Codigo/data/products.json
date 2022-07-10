@@ -1,0 +1,117 @@
+[
+ {
+  "id": "1",
+  "name": "absolut",
+  "description": "vodka absolut",
+  "price": 3701.27,
+  "image": "../images/absolut.jpeg",
+  "category": "oferta"
+ },
+ {
+  "id": "2",
+  "name": "andes",
+  "description": "cerveza andes",
+  "price": 175.58,
+  "image": "../images/andes.jpg",
+  "category": "destacado"
+ },
+ {
+  "id": "3",
+  "name": "aperol",
+  "description": "aperol",
+  "price": 2712.6,
+  "image": "../images/aperol.jpg",
+  "category": "oferta"
+ },
+ {
+  "id": "4",
+  "name": "champagne",
+  "description": "champagne",
+  "price": 628.44,
+  "image": "../images/champagne.jpg",
+  "category": "destacado"
+ },
+ {
+  "id": "5",
+  "name": "chandon",
+  "description": "chandon",
+  "price": 1573.34,
+  "image": "../images/chandon.jpg",
+  "category": "oferta"
+ },
+ {
+  "id": "6",
+  "name": "chivas",
+  "description": "Wiski",
+  "price": 800,
+  "image": "../images/chivas.jpg",
+  "category": "destacado",
+  "discount": 5
+ },
+ {
+  "id": "7",
+  "name": "corona",
+  "description": "cerveza corona",
+  "price": 75.31,
+  "image": "../images/coronaCerveza.jpg",
+  "category": "oferta"
+ },
+ {
+  "id": "9",
+  "name": "fernet",
+  "description": "fernet branca",
+  "price": 3303.94,
+  "image": "../images/fernet.jpg",
+  "category": "oferta"
+ },
+ {
+  "id": "10",
+  "name": "Luigi Bosca",
+  "description": "Alto vino el Luigi Bosca",
+  "price": 1700,
+  "image": "../images/luigiBosca.jpg",
+  "category": "in-sale",
+  "discount": 5
+ },
+ {
+  "id": "11",
+  "name": "jack daniels",
+  "description": "jack daniels whisky",
+  "price": 4646.24,
+  "image": "../images/jackDaniels.jpg",
+  "category": "oferta"
+ },
+ {
+  "id": "12",
+  "name": "bombay saphyre",
+  "description": "gin bombay",
+  "price": 3109.92,
+  "image": "../images/gin.jpg",
+  "category": "destacado"
+ },
+ {
+  "id": "13",
+  "name": "smirnoff",
+  "description": "vodka",
+  "price": 4942.49,
+  "image": "../images/vodka.jpg",
+  "category": "oferta"
+ },
+ {
+  "id": "14",
+  "name": "merle gin",
+  "description": "gin merle",
+  "price": 1738.94,
+  "image": "../images/merle.jpg",
+  "category": "destacado"
+ },
+ {
+  "name": "",
+  "price": "",
+  "discount": "",
+  "category": "",
+  "description": "",
+  "image": "",
+  "id": "141"
+ }
+]

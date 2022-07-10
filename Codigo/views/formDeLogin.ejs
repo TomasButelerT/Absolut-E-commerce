@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <%- include('../views/partials/head') %>  
+    <link rel="stylesheet" href="/css/formDeLogin.css">
+    <script src="/js/validacionLogin.js"></script>
+
+
+<body>
+
+    <head>
+
+    </head>
+    <main>
+        <section class="form-login">
+            <% if (typeof errors != "undefined") { %>
+                <p style="color:red">ERROR!</p> 
+                <ul>
+                    <% for (let i=0; i<errors.length;i++){ %> 
+                    <li>
+                        <%= errors[i].msg %> 
+                    </li>
+                </ul>
+                <% } %> 
+                <% }  %> 
+            <form action="/users/login" method="POST">
+            <h5>Login</h5>
+            <label for="username">
+            <input class="controls" type="text" name="email" value="" placeholder="Usuario" id="email">
+            </label>
+            <p id="errorEmail">Debes escribir tu nombre de usuario</p>
+            <label for="pswrd">
+            <input class="controls" type="password" name="password" value="" placeholder="Contraseña" id="password">
+             </label>
+             <p id="errorPassword">Debes ingresar una contraseña valida</p> 
+            <input class="buttons" type="submit" name="" value="Ingresar">
+            <p>
+                <a href="#">¿Olvidaste tu contraseña/</a>
+                <a href="formulario">No tenes cuenta?</a>
+            </p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

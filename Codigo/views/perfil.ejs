@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../views/partials/head') %> 
+    <%- include('../views/partials/header') %> 
+    <link rel="stylesheet" href="/css/perfil.css">
+<body>
+    <br><br><br>
+<div class="datos">
+<h3>Nombre: <%= user.name %></h3>
+<h3>Apellido:<%= user.surname%> </h3>
+<h3>Email:<%= user.email%> </h3>
+<h3>Fecha de nacimiento:<%= user.date%>  </h3>
+<h3>Foto de perfil: </h3>
+<img src="/images/<%= user.image %> " alt="" id="foto">
+<form action="/users/edicion/<%= user.id %>" id="boton">
+    <button>Editar perfil</button>
+</form>
+</div>
+</body>
+<%- include('../views/partials/footer') %> 
+</html>

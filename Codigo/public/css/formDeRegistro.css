@@ -1,0 +1,180 @@
+#errorName {
+    display: none;
+}
+#errorApellido{
+    display: none;
+}
+#errorPassword{
+    display: none;
+}
+body {
+    background-color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+main{
+    text-align: -webkit-center;
+}
+.titulo{
+    font-family: 'Monoton', cursive;
+    font-size: 24px;
+}
+.infor{
+    font-family: 'Monoton', cursive;
+    font-size: 14px;
+}
+
+.almedio{
+    text-align: center;
+    margin-top: 10%;
+    margin-left: 0%;
+}
+
+p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+.top-header-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.desktop{
+    display:none;
+}
+.header-desktop{
+    display:none
+}
+label{
+    display: block;
+}
+
+input{
+    display: block;
+    margin-top: 5px;
+    width: 300px;
+}
+
+#conditions{
+    display: inline;
+    width: fit-content;
+}
+
+.header-top-right{
+    display: inline-flex;
+    width: 50px;
+    justify-content: space-between;
+}
+
+#logo img{
+    width:50px ;
+}
+
+
+@media(min-width:720px){
+    .top-header-flex{
+        display: none;
+    }
+    .header-desktop{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    #search-bar{
+        width: 250px;
+    }
+    
+
+    .desktop-top-header{
+        display: inline-flex;
+        width: 40px;
+        justify-content: space-between;
+        padding-top: 19px;
+        padding-right: 10px;
+    }
+    #logo{
+        margin-left: 10px;
+
+    }
+
+    .titulo{
+        margin-right: 95px;
+    }
+
+    .flex-all{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .button-submit{
+       padding-left: 0%;
+       margin-top: 7%;
+    }
+
+    button {
+        width: 140px;
+        height: 45px;
+        font-size: 23px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: transparent;
+        color: white;
+        background-color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        position: relative;
+        transition: all 0.5s;
+        z-index: 1;
+       }
+
+
+
+
+       button::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background-color: white;
+        z-index: -1;
+        transition: all 0.5s;
+ }       
+
+ button:hover::before {
+     width: 100%;
+    }
+    
+    button:hover {
+     color: black;
+    }
+    
+    button:active:before {
+     background: #b9b9b9;
+    }
+
+
+    
+
+    article button{
+        width: 100px;
+        height: 50px;
+        margin-top: 0px;
+    }
+    .fa-search:before{
+        padding-left: 10px;
+    }
+     footer{
+        display: flex;
+        margin-top: 60px;
+
+    }
+    .textoFooter i{
+        font-size: 50px;
+    }
+}

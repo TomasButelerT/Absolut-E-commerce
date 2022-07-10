@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+    font-family: 'Monoton', cursive;
+}
+
+p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    
+}
+
+
+p.descripcion-precio{
+    text-align: end;
+    
+}
+h5.titulo{
+    margin-left: 25px;
+    
+}
+
+div.precio{
+    display: flex;
+    align-items: center;
+    margin-right: 18px;
+}
+div.productos{
+    display: flex;
+    flex-direction: column;
+
+}
+div.producto-hijo{
+    display: flex;
+    position: relative;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+div.input-mas-menos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#img-main{
+    margin-left: 10px;
+    width: 132px;
+    margin-right: 10px;
+}
+#input-mas-menos{
+    width: 21px;
+}
+div.tacho{
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+
+}
+div.totales{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#totales{
+    text-align: center;
+}
+div.button-comprar{
+    display: flex;
+    justify-content: center;
+}
+div.descuento{
+    margin-right: -44px;
+}
+div.subtotal{
+    margin-right: -88px;
+}
+#carro{
+    display: none;
+}
+
+@media(min-width:720px){
+    h2.cate{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    div.input-mas-menos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px;
+    }
+    div.totales{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        left: -135px;
+    }
+    #totales {
+        margin-right: 80px;
+        margin-left: 168px;
+        text-align: center;
+
+    }
+    div.button-comprar {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        left: -356px;
+    }
+    div.linea{
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        width: 90%;
+        border-bottom: 1px solid black ;
+    }
+    div.descuento{
+        margin-right: 9px;
+    }
+    div.subtotal{
+        margin-right: 1px;
+    }
+     
+    
+}

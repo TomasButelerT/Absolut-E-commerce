@@ -1,0 +1,31 @@
+div.titulo{
+    text-align: center;
+}
+
+div.formulario{
+    text-align: center;
+}
+div.row-product-detail{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.input{
+    margin: 10px 0px 10px 10px;
+}
+.erroresBack{
+    text-align: center;
+}
+#errorNombre{
+    display: none;
+}
+#errorDescripcion{
+    display: none;
+}
+
+#foto{
+    max-width: 200px;
+    margin: 0px -245px 20px 35px;
+}

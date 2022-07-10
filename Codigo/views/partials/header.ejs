@@ -1,0 +1,63 @@
+<header>
+    <div class="iconos">
+        <a href=""><i class="fas fa-arrow-left"></i></a>
+    </div>
+
+    </div> 
+    <div class="menu">
+        <div>
+            <i id="burgermenu" class="fas fa-bars"></i>
+        </div>
+
+        <div>
+            <a href="/">
+                <img id="logo" src="/images/para_eue.png" alt="logo" >
+                </a>
+        </div>
+        <div class="busqueda-burger">
+            <div class="buscarOculto">
+                <form action="/products/busqueda">
+                <label for="buscado">
+                    <input type="text" name="keyword"placeholder="Busca tus productos">
+                    <button type="submit">Enviar</button>
+                </label>
+                </form>
+            </div>
+            <div class="lupa">
+                <a href="">
+                <i id="lupa" class="fas fa-search"  ></i>
+                </a>
+            </div>
+           
+            <div>
+               <a href="/carrito"> <i id="lupa" class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div>
+            <a href="/agregar"><i id="lupa" class="fas fa-plus"></i></a>
+            </div>
+            <div>
+                <% if (user == undefined) {%> 
+            <a href="/users/login"><i id="lupa" class="fas fa-portrait"></i></a>
+            <% }else{ %>
+                <div>
+                    <a href="/users/detalle/<%= user.id %>"> <p style="color: white;">Bienvenido, <%= user.name %> </p> </a>
+                 </div>
+                 <% } %> 
+            </div>
+            
+        </div>
+        
+    </div>
+    
+    <div class="desktop">
+
+        <a class="barra-de-cate" href="/"><h2>Home</h2></a>
+        <a class="barra-de-cate" href=""><h2>Vodka</h2></a>
+        <a class="barra-de-cate" href=""><h2>Cerveza</h2></a>
+        <a class="barra-de-cate" href=""><h2>Otros</h2></a>
+
+    </div>
+    
+    
+   
+</header>

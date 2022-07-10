@@ -1,0 +1,26 @@
+footer{
+    background-color: black;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    display: none;
+}
+@media (min-width :720px) {
+    
+
+footer{
+    
+    display: flex;
+    text-align: center;
+    
+
+}
+.textoFooter{
+    color: white;
+ 
+    margin: 36px;
+}
+.textoFooter i{
+    font-size: 50px;
+    text-align: center;
+}
+}

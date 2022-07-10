@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('../views/partials/head') %>  
+    <link rel="stylesheet" href="/css/home.css">
+
+<body>
+    <%- include('../views/partials/header') %> 
+ <main>
+     <section>
+    <article>
+        <div class="slider">
+          <ul>
+            <li><img src="../images/UE 1.png" alt="descuentos"></li>
+            <li><img src="../images/UE 2.png" alt="descuentos"></li>
+            <li><img src="../images/UE 3.png" alt="descuentos"></li>
+            <li><img src="../images/UE 4.png" alt="descuentos"></li>
+            <li><img src="../images/UE 5.png" alt="descuentos"></li>
+            <li><img src="../images/UE 6.png" alt="descuentos"></li>
+          </ul>
+
+        </div>
+        <div class="sliderDesktop">
+          <ul>
+            <li><img src="../images/UE F 1.png" alt="descuentos"></li>
+            <li><img src="../images/UE F 2.png" alt="descuentos"></li>
+            <li><img src="../images/UE F 3.png" alt="descuentos"></li>
+            <li><img src="../images/UE F 4.png" alt="descuentos"></li>
+            <li><img src="../images/UE F 5.png" alt="descuentos"></li>
+            <li><img src="../images/UE F 6.png" alt="descuentos"></li>
+          </ul>
+
+        </div>
+    </article>
+
+    <article>
+        <br> <br>
+        <div class="box-h3">
+          <h3 class="h3-text">DESTACADOS </h3> 
+        </div>
+      <div class="main-flex">
+        <% productsDestacado.forEach(prod =>{ %> 
+        <div class="div-padre">
+          <a href="/products/<%= prod.id %>">
+            <img src="<%= prod.image %>" alt="<%= prod.name %> ">
+          </a>
+            <div class="div-hijo">
+                <div class="precio-descuento">
+                    <p class = "precios"><%= prod.price %> </p> 
+                    <p class = "descuentos">5% OFF</p>
+                </div>
+                <div class = "descripciones">
+                    <p class = "descripcion"><strong><%= prod.name %> </strong></p>
+                    <div class="a-carrito">
+                      <a id="agregar-carrito" href=""> Agregar al carrito</a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <% }) %>
+      </div>
+
+
+      <br><br><br>
+
+
+      <div class="box-h3">
+        <h3 class="h3-text">PRODUCTOS EN OFERTA</h3> 
+      </div>
+    <div class="main-flex">
+      <% productsOfertas.forEach(prod =>{ %> 
+        
+      <div class="div-padre">
+        <a href="/products/<%= prod.id %>">
+          <img src="<%=prod.image%>" alt="<%= prod.name %> ">
+        </a>
+          <div class="div-hijo">
+              <div class="precio-descuento">
+                  <p class = "precios"><%= prod.price %> </p> 
+                  <p class = "descuentos">5% OFF</p>
+              </div>
+              <div class = "descripciones">
+                  <p class = "descripcion"><strong><%= prod.name %> </strong></p>
+                  <div class="a-carrito">
+                    <a id="agregar-carrito" href=""> Agregar al carrito</a>
+                  </div>
+              </div>  
+          </div>
+      </div>
+      <% }) %>
+    </div>
+    </article>
+     </section>
+ </main>
+</body>
+<%- include('../views/partials/footer') %> 
+</html>
